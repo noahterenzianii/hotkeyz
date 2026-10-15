@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Hotkeyz",
+  "version": "1.0.0",
+  "description": "Keyboard shortcuts to browse the web faster.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
